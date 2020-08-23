@@ -1,0 +1,90 @@
+.header{
+    grid-row: 2/3; 
+    grid-column: 2/10;
+
+    width: auto;
+    overflow: hidden;
+
+    background-color:  $color-primary;
+
+    display: grid;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    &__hello{
+        position: absolute;
+        backface-visibility: hidden;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: rgb(255, 255, 255);
+        padding: 1rem;
+        border-radius: 50px;
+        text-decoration: none;
+        align-self: start;
+        font-size: 4rem;
+        outline: none;
+        transition: all 0.3s 0.36s;
+        background:  linear-gradient(-50deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1));
+        box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25),
+                    -3px -3px 6px 0 rgba(255, 255, 255, 0.3);
+        cursor: pointer;
+        &:hover{
+            //transform: translateY(-1.5px);
+        }
+        &:active{
+            background: linear-gradient(135deg, rgba(0,0,0,1), rgba(255,255,255,1));
+            outline: none;
+            //transform: translateY(1.5px);
+        }
+        &:target{
+            transform: translateY(-50%) translateX(-1000%);
+        }
+        &:target ~ .header__name,
+        &:target ~ .header__welcome{
+            transform: translateX(0);
+        }
+        &:target ~ .header__looker{
+            animation: settled 1s 1;
+            transform: translateX(-120px) translateY(20px) rotateZ(0deg);
+        }
+    }
+    &__name{
+        transform: translateX(1000%);
+        color: goldenrod;
+        padding: 1rem;
+        border-radius: 50px;
+        align-self: start;
+        font-size: 2rem;
+        background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+        box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25)inset,
+                    -3px -3px 6px 0 rgba(255, 255, 255, 0.3)inset;
+        transition: all 0.5s;
+    }
+    &__welcome{
+        transform: translateX(1000%);
+        color: goldenrod;
+        padding: 1rem;
+        border-radius: 50px;
+        align-self: end;
+        font-size: 3rem;
+        background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+        box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25)inset,
+                    -3px -3px 6px 0 rgba(255, 255, 255, 0.3)inset;
+        transition: all 0.5s;
+    }
+    &__looker{
+        position: absolute;
+        z-index: 0;
+        top: 41%;
+        left: 45%;
+        transform: rotateZ(-45deg);
+        font-size: 4rem;
+        transition: all 2s;
+        animation: updown 2s infinite;
+        backface-visibility: hidden;
+        
+    }
+}
