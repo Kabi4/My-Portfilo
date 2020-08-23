@@ -32,6 +32,7 @@ body {
   grid-column: 1/-1;
   padding: 2rem;
   background-color: #f0ebeb;
+  background-image: linear-gradient(rgba(247, 236, 236, 0.6), rgba(247, 236, 236, 0.6)), url(./../Images/nav.jpg);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -62,12 +63,16 @@ body {
   width: auto;
   overflow: hidden;
   background-color: #f0ebeb;
+  background-image: linear-gradient(rgba(247, 236, 236, 0.4), rgba(247, 236, 236, 0.4)), url(./../Images/main.jpg);
+  background-size: cover;
+  border-radius: 40px;
   display: grid;
   grid-gap: 2rem;
   align-items: center;
   justify-items: center;
   position: relative; }
   .header__hello {
+    z-index: 3;
     position: absolute;
     backface-visibility: hidden;
     z-index: 1;
@@ -82,7 +87,7 @@ body {
     font-size: 4rem;
     outline: none;
     transition: all 0.3s 0.36s;
-    background: linear-gradient(-50deg, black, white);
+    background: linear-gradient(-50deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25), -3px -3px 6px 0 rgba(255, 255, 255, 0.3);
     cursor: pointer; }
     .header__hello:active {
@@ -96,7 +101,11 @@ body {
     .header__hello:target ~ .header__looker {
       animation: settled 1s 1;
       transform: translateX(-120px) translateY(20px) rotateZ(0deg); }
+    .header__hello:target ~ .cover {
+      opacity: 0;
+      visibility: hidden; }
   .header__name {
+    z-index: 3;
     transform: translateX(1000%);
     color: goldenrod;
     padding: 1rem;
@@ -107,6 +116,7 @@ body {
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25) inset, -3px -3px 6px 0 rgba(255, 255, 255, 0.3) inset;
     transition: all 0.5s; }
   .header__welcome {
+    z-index: 3;
     transform: translateX(1000%);
     color: goldenrod;
     padding: 1rem;
@@ -117,8 +127,8 @@ body {
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25) inset, -3px -3px 6px 0 rgba(255, 255, 255, 0.3) inset;
     transition: all 0.5s; }
   .header__looker {
+    z-index: 3;
     position: absolute;
-    z-index: 0;
     top: 41%;
     left: 45%;
     transform: rotateZ(-45deg);
@@ -127,7 +137,17 @@ body {
     animation: updown 2s infinite;
     backface-visibility: hidden; }
 
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f0ebeb;
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s; }
+
 .container {
   display: grid;
   grid-template-rows: 18vh 82vh;
-  grid-template-columns: minmax(3rem, 1fr) repeat(8, 14rem) minmax(3rem, 1fr); }
+  grid-template-columns: minmax(3rem, 1fr) repeat(8, 14rem) minmax(3rem, 1fr);
+  background-image: linear-gradient(rgba(247, 236, 236, 0.6), rgba(247, 236, 236, 0.6)), url(./../Images/nav.jpg); }
