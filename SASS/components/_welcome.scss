@@ -6,13 +6,16 @@
     overflow: hidden;
 
     background-color:  $color-primary;
-
+    background-image: linear-gradient(rgba($color-body,0.4),rgba($color-body,0.4)), url(./../Images/main.jpg);
+    background-size: cover;
+    border-radius: 40px;
     display: grid;
     grid-gap: 2rem;
     align-items: center;
     justify-items: center;
     position: relative;
     &__hello{
+        z-index: 10;
         position: absolute;
         backface-visibility: hidden;
         z-index: 1;
@@ -27,7 +30,7 @@
         font-size: 4rem;
         outline: none;
         transition: all 0.3s 0.36s;
-        background:  linear-gradient(-50deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1));
+        background:  linear-gradient(-50deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
         box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25),
                     -3px -3px 6px 0 rgba(255, 255, 255, 0.3);
         cursor: pointer;
@@ -50,8 +53,13 @@
             animation: settled 1s 1;
             transform: translateX(-120px) translateY(20px) rotateZ(0deg);
         }
+        &:target ~ .cover{
+            opacity: 0;
+            visibility: hidden;
+        }
     }
     &__name{
+        z-index: 2;
         transform: translateX(1000%);
         color: goldenrod;
         padding: 1rem;
@@ -64,6 +72,7 @@
         transition: all 0.5s;
     }
     &__welcome{
+        z-index: 2;
         transform: translateX(1000%);
         color: goldenrod;
         padding: 1rem;
@@ -76,8 +85,8 @@
         transition: all 0.5s;
     }
     &__looker{
+        z-index: 1;
         position: absolute;
-        z-index: 0;
         top: 41%;
         left: 45%;
         transform: rotateZ(-45deg);
@@ -87,4 +96,14 @@
         backface-visibility: hidden;
         
     }
+}
+
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:  $color-primary;
+    opacity: 1;
+    visibility: visible;
+    transition: all 1s;
 }

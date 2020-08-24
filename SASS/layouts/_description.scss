@@ -1,0 +1,222 @@
+.description{
+    grid-row: 3/4;
+    grid-column: 1/-1;
+    margin-bottom: -20rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    position: relative;
+    &__competetive{
+        height: 0;
+        position: relative;
+        &:nth-child(1){
+            margin-left: 2rem;
+        }
+        &:last-child{
+            margin-right: 2rem;
+        }
+        display: grid;
+        grid-template-rows: 4rem 1fr;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 2rem;
+        &__heading{
+            grid-row: 1/2;
+            grid-column: 1/-1;
+            align-self: center;
+            justify-self: center;
+        }
+        &__card{
+            position: relative;
+            perspective: 150rem;
+            -moz-perspective: 150rem;
+            perspective-origin: top;
+            -moz-perspective-origin: top;
+            align-self: center;
+            justify-self: center;
+            border-radius: 30px;
+            background-image: linear-gradient(rgba(white,0.5),rgba(black,0.5));
+            text-align: center;
+            padding: 4rem 2rem;
+            transform: rotateX(65deg) translateY(-20rem) scaleX(0.85) scaleY(0.75);
+            transform-origin: center bottom;
+            transition: all 0.6s;
+            backface-visibility: hidden;
+            z-index: 2;
+            
+            &--1{
+                background-image: linear-gradient(rgba(white,0.5),rgba($color-card-1,0.5));
+                box-shadow: 0 0 16rem rgba($color-card-1,0.8) inset,0 8rem 8rem rgba($color-card-1-dark,0.8);
+                & p{
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-color: black;
+                    padding-bottom:2rem;
+                    border-bottom: 2px solid $color-card-1;
+                }
+            }
+            &--2{
+                background-image: linear-gradient(rgba(white,0.5),rgba($color-card-2,0.5));
+                box-shadow: 0 0 16rem rgba($color-card-2,0.8) inset,0 8rem 8rem rgba($color-card-2-dark,0.8);
+                & p{
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    color: transparent;
+                    background-color: black;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    padding-bottom:2rem;
+                    border-bottom: 2px solid $color-card-2;
+                }
+                
+            }
+            &--3{
+                background-image: linear-gradient(rgba(white,0.5),rgba($color-card-3,0.5));
+                box-shadow: 0 0 16rem rgba($color-card-3,0.8) inset,0 8rem 8rem rgba($color-card-3-dark,0.8);
+                & p{
+                    font-size: 1.5rem;
+                    line-height: 1;
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-color: black;
+                    padding-bottom:2rem;
+                    border-bottom: 2px solid $color-card-3;
+                }
+            }
+            //-webkit-filter: hue-rotate(80deg) saturate(140%);
+            //filter: hue-rotate(80deg) saturate(140%); 
+            &__icon--1{
+                display: inline-block;
+                width: 8rem;
+                height: 8rem;
+                fill: rgba($color-card-1,0.8);
+                padding-bottom:2rem; 
+            }
+            &__icon--2{
+                display: inline-block;
+                width: 8rem;
+                height: 8rem;
+                fill: rgba($color-card-2,0.8);
+                padding-bottom:2rem;
+            }
+            &__icon--3{
+                display: inline-block;
+                width: 8rem;
+                height: 8rem;
+                fill: rgba($color-card-3,0.8);
+                padding-bottom:2rem;
+            }
+            &:hover{
+                transform: rotateX(0) translateY(0) scaleX(1) scaleY(1);
+                box-shadow: -0.5rem 5rem 6rem black;
+            }
+            
+        }
+        &:hover &__card:not(:hover){
+            transform: rotateX(55deg) translateY(-17rem) scaleX(0.8) scaleY(0.5);
+        } 
+    }
+    &__programming{
+        text-align: center;
+        position: relative;
+        grid-column: 2/3;
+        height: 0;
+        &__card{
+            position: absolute;
+            top: 8rem;
+            left: 25%;
+            backface-visibility: hidden;
+            text-align: center;
+            height: 36rem;
+            width: 26rem;
+            padding: 2rem 4rem;
+            box-shadow: -0.5rem 5rem 6rem rgba(black,0.5);
+            border-radius: 30px;
+            background-color: orangered;
+            transition: all 1s;
+            &--0{
+                background-image: linear-gradient(to bottom right,$card-0,$card-0-dark);
+                transform-origin: bottom;
+                transform: rotateZ(27deg);
+                z-index: 40;
+            }
+            &--1{
+                background-image: linear-gradient(to bottom right,$card-1,$card-1-dark);
+                transform-origin: bottom;
+                transform: rotateZ(-12deg);
+                z-index: 10;
+                & p{
+                    border-bottom: 2px solid $card-1;
+                }
+            }
+            &--2{
+                background-image: linear-gradient(to bottom right,$card-2,$card-1-dark);
+                transform-origin: bottom;
+                transform: rotateZ(0deg);
+                z-index: 20;
+                & p{
+                    border-bottom: 2px solid $card-2;
+                }
+            }
+            &--3{
+                background-image: linear-gradient(to bottom right,$card-3,$card-1-dark);
+                transform-origin: bottom;
+                transform: rotateZ(12deg);
+                z-index: 27;
+                & p{
+                    border-bottom: 2px solid $card-3;
+                }
+            }
+            &--4{
+                background-image: linear-gradient(to bottom right,$card-4,$card-4-dark);
+                transform-origin: bottom;
+                transform: rotateZ(-25deg);
+                z-index: 5;
+                & p{
+                    border-bottom: 2px solid $card-4;
+                }
+            }
+            &__icon{
+                &--small{
+                    height: 2rem;
+                    width: 2rem;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 2rem;
+                    left: 2rem;
+                    
+                }
+                &--0{
+                    font-size: 8rem;
+                    text-decoration: none;
+                    font-family: sans-serif;
+                    color: transparent;;
+                }
+                &--1{
+                    height: 8rem;
+                    width: 8rem;
+                    padding-bottom: 2rem;
+                }
+
+            }
+            & p{
+                font-size: 1.5rem;
+                    line-height: 1;
+                    color: transparent;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    background-color: black;
+                    padding-bottom:2rem;
+            }
+            &:target{
+                transform-origin: bottom;
+                transform: rotateZ(0deg) translateX(0) translateY(8rem) scale(1);
+                z-index: 500;
+                //animation: cardOut 1s 1;
+            }
+        }
+        
+    }
+}

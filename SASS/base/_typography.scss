@@ -9,9 +9,17 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
 }
 
 body{
     line-height:1.6;
     background-color: $color-body;
+}
+
+.gif{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-20%);
+    width: 20rem;
 }
