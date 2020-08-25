@@ -1,12 +1,14 @@
 @import 'base/animations'; 
 @import 'base/variables'; 
 @import 'base/typography'; 
-
+ 
 @import 'components/cliptext';
 @import 'components/header';  
-@import 'components/navigation'; 
-@import 'components/welcome'; 
+@import 'components/navigation';  
+@import 'components/welcome';
+@import 'components/button';  
 
 @import 'pages/center';
 @import 'layouts/home';
 @import 'layouts/description';
+@import 'layouts/popup';
