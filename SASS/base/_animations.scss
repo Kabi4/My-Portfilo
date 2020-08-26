@@ -78,3 +78,25 @@
         transform: translateY(-100%);
     }
 }
+
+
+@keyframes toleft{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: -100%;
+    }
+    40%{
+        left: -200%;
+    }
+    60%{
+        left: -300%;
+    }
+    80%{
+        left: -400%;
+    }
+    100%{
+        left: -500%;
+    }
+}

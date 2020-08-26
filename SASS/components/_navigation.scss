@@ -7,12 +7,12 @@
     list-style: none; 
 
     display: grid;
-
     grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
     align-items: center;
     justify-items: center;
 
     &__items{
+        z-index: 3;
         font-size: 2rem;
         text-align: center;
         background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
@@ -27,7 +27,7 @@
         & a:visited{
             text-decoration: none;
             
-            color: rgb(80, 81, 83);
+            color: black;
         }
 
         &:hover{
