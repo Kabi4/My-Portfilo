@@ -171,54 +171,86 @@
 
         &__slide{
             text-align: center;
-            object-fit: cover;
-            text-align: center;
+            //object-fit: cover;
+            height: 100%;
+
             
             //flex-direction: column;
             //justify-items: end;
             
-            & *{
-                text-decoration: none;
-                color: goldenrod;
-                padding-top: 80vh;
-                //bottom: 0;
-            }
+            
             
             &__1{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../Slider/JS.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 80vh;
+                    //bottom: 0;
+                }
             }
             &__2{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../Slider/Certificate_Js.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 75vh;
+                    //bottom: 0;
+                }
             }
             &__3{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../Slider/Certificate_WD.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 72vh;
+                    //bottom: 0;
+                }
             }
             &__4{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../Slider/Ceritificate_FEND.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 75vh;
+                    //bottom: 0;
+                }
             }
             &__5{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../Slider/ProblemSOlving.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 80vh;
+                    //bottom: 0;
+                }
             }
             &__6{
                 background-image: linear-gradient(90deg,rgba(white,0.5),rgba(white,0.5)), url('./../../Slider/JS.png');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: center;
+                //background-position: center;
+                & *{
+                    text-decoration: none;
+                    color: goldenrod;
+                    padding-top: 80vh;
+                    //bottom: 0;
+                }
             }
         }
     }

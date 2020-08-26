@@ -4,6 +4,57 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     position: relative;
+    object-fit: cover;
+    // &::before{
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: 800;
+    //     background-image:  url(./../Images/CoverOne.jpg);
+    //     //background-blend-mode: hue;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     opacity: 1;
+    //     visibility: visible;
+    //     //transform-origin: right;
+    //     transition: all 2s;
+    //     transition-delay: 1s;
+    // }
+    // &[data-scroll='in']::before{
+    //     opacity: 0;
+    //     visibility: hidden;
+    //     //transition: all 1s;
+    //     //transition-delay: 0s;
+    //     //transform-origin: left;
+        
+    // }
+    &[data-scroll='out'] > *{
+        opacity: 0;
+        
+        visibility: hidden;
+        transition: all 1s;
+        transition-delay: 0s;
+        transform: scale(0);
+        //transition: all 1s;
+        //transition-delay: 0s;
+        //transform-origin: left;
+        
+    }
+    &[data-scroll='in'] > *{
+        opacity: 1;
+        visibility: 1;
+        
+        transition: all 1s;
+        transition-delay: 0.3s;
+        transform: scale(1);
+        //transition: all 1s;
+        //transition-delay: 0s;
+        //transform-origin: left;
+        
+    }
     &__competetive{
         height: 0;
         position: relative;

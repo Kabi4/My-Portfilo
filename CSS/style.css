@@ -245,42 +245,55 @@ body {
     animation: toleft 30s linear infinite; }
     .header__slider__slide {
       text-align: center;
-      object-fit: cover;
-      text-align: center; }
-      .header__slider__slide * {
-        text-decoration: none;
-        color: goldenrod;
-        padding-top: 80vh; }
+      height: 100%; }
       .header__slider__slide__1 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../Slider/JS.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__1 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 80vh; }
       .header__slider__slide__2 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../Slider/Certificate_Js.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__2 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 75vh; }
       .header__slider__slide__3 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../Slider/Certificate_WD.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__3 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 72vh; }
       .header__slider__slide__4 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../Slider/Ceritificate_FEND.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__4 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 75vh; }
       .header__slider__slide__5 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../Slider/ProblemSOlving.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__5 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 80vh; }
       .header__slider__slide__6 {
         background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./../../Slider/JS.png");
         background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center; }
+        background-repeat: no-repeat; }
+        .header__slider__slide__6 * {
+          text-decoration: none;
+          color: goldenrod;
+          padding-top: 80vh; }
 
 .btn {
   border: none;
@@ -313,14 +326,27 @@ body {
   grid-template-rows: 13vh 83vh 50rem;
   grid-template-columns: minmax(3rem, 1fr) repeat(8, 14rem) minmax(3rem, 1fr);
   background-image: linear-gradient(rgba(247, 236, 236, 0.6), rgba(247, 236, 236, 0.6)), url(./../Images/nav.jpg);
-  grid-row-gap: 4rem; }
+  grid-row-gap: 6rem; }
 
 .description {
   grid-row: 3/4;
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  position: relative; }
+  position: relative;
+  object-fit: cover; }
+  .description[data-scroll='out'] > * {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+    transition-delay: 0s;
+    transform: scale(0); }
+  .description[data-scroll='in'] > * {
+    opacity: 1;
+    visibility: 1;
+    transition: all 1s;
+    transition-delay: 0.3s;
+    transform: scale(1); }
   .description__competetive {
     height: 0;
     position: relative;
