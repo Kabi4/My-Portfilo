@@ -86,9 +86,10 @@
             background-image: linear-gradient(rgba(white,0.5),rgba(black,0.5));
             text-align: center;
             padding: 4rem 2rem;
-            transform: rotateX(65deg) translateY(-20rem) scaleX(0.85) scaleY(0.75);
+            transform: perspective(250rem) rotateX(65deg) translateY(-20rem) scaleX(1) scaleY(1);
             transform-origin: center bottom;
-            transition: all 0.6s;
+            transform-style: preserve-3d;
+            transition: all 0.5s;
             backface-visibility: hidden;
             z-index: 2;
             
@@ -159,13 +160,13 @@
                 padding-bottom:2rem;
             }
             &:hover{
-                transform: rotateX(0) translateY(0) scaleX(1) scaleY(1);
+                transform: perspective(200rem) rotateX(0) translateY(0) scaleX(1) scaleY(1);
                 box-shadow: -0.5rem 5rem 6rem black;
             }
             
         }
         &:hover &__card:not(:hover){
-            transform: rotateX(55deg) translateY(-17rem) scaleX(0.8) scaleY(0.5);
+            transform: perspective(200rem) rotateX(55deg) translateY(-17rem) scaleX(0.8) scaleY(0.5);
         } 
     }
     &__programming{

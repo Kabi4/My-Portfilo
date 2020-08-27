@@ -1,0 +1,20 @@
+.cta__link{
+    &:link,
+    &:visited{ 
+        text-decoration: none;
+        color: currentColor;
+        display: inline-block;
+        padding: 1rem;
+        font-size: 2.5rem;
+        box-shadow: 1rem 0.5rem 3rem black;
+        border-radius: 4px;
+        transition: all 0.2s;
+        transform-style: preserve-3d;
+    }
+    &:hover{
+        transform: translateY(-3px);
+    }
+    &:active{
+        transform: translateY(3px);
+    }
+}

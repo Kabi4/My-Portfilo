@@ -100,3 +100,21 @@
         left: -500%;
     }
 }
+
+@keyframes upDown{
+    0%{
+        transform: inherit;
+    }
+    25%{
+        transform: translateY(-1rem);
+    }
+    50%{
+        transform: translateY(0rem);
+    }
+    75%{
+        transform: translateY(1rem);
+    }
+    100%{
+        transform: inherit;
+    }
+}

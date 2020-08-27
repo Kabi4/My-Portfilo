@@ -1,7 +1,21 @@
 .heading{
+    &__primary{
+        display: inline-block;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right,$heading-primary 30%,$heading-primary-dark 100%);
+        color: transparent;
+        transition: all 0.2s;
+        text-shadow: 0 0 3rem black;
+        //border-bottom: 3px solid $heading-primary-dark;
+        padding: 2rem;
+    }
     &__secondary{
         display: inline-block;
-        font-size: 3rem;
+        font-size: 2.3rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         background-clip: text;

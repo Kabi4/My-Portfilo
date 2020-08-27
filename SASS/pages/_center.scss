@@ -1,10 +1,10 @@
 .container{
     position: relative;
     display: grid;
-    grid-template-rows: 13vh 83vh 60rem;
+    grid-template-rows: 13vh 83vh 60rem 60rem;
     grid-template-columns: minmax(3rem,1fr) repeat(8,14rem) minmax(3rem,1fr);
     background-image: linear-gradient(rgba($color-body,0.6),rgba($color-body,0.6)), url(./../Images/nav.jpg);
-
+    //overflow:hidden;
     grid-row-gap: 6rem; 
     //background-blend-mode: hue;
     //z-index: 1;
