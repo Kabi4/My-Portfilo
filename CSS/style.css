@@ -684,7 +684,7 @@ body {
   .popup__content {
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to right, black, red);
+    background-image: linear-gradient(to right, darkblue, red);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
