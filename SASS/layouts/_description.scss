@@ -5,6 +5,10 @@
     grid-template-columns: 3fr 2fr;
     position: relative;
     object-fit: cover;
+    background-image: linear-gradient(rgba(black,0.6),rgba(black,0.6)), url('./../Images/desciption.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     // &::before{
     //     content: '';
     //     position: absolute;

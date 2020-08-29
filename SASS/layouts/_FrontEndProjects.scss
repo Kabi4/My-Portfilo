@@ -1,42 +1,51 @@
 .frontEndProjects{
     grid-row: 5/6;
     grid-column: 1/-1;
-    -webkit-scrollbar-width: 0rem;
     position: relative;
-    scrollbar-width: 0rem;
     background-image: linear-gradient(rgba(black,0.6),rgba(black,0.6)), url('./../Images/OAYTIV0.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
     &__primary{
         background-image: linear-gradient(to bottom,white,cyan)!important;
         transition: all 1s ease-in;
-        transition-delay: 0.6s;
+        transition-delay: 0.4s;
         &[data-scroll='out'] {
             letter-spacing: 1rem;
-            opacity: 0;
+            opacity: 1;
         }
         &[data-scroll='in']{
             letter-spacing: normal;
             opacity: 1;
         } 
     }
+    
     &__card{
-        display: flex;
+        &:nth-of-type(even){
+            display: flex;
+        }
+        &:nth-of-type(odd){
+            display: flex;
+            flex-direction: row-reverse;
+        }
         height: 100%;
         padding: 8rem 4rem;
         object-fit: cover;
         transition: all 0.8s ease-in;
         transition-delay: 0.4s;
         &__figure{
+            text-align: center;
             &[data-scroll='out'] {
-                transform: translateX(-100%);
-                width: 200%;
+                //transform: translateX(-100%);
+                transform: scaleX(3) ;
+                //width: 200%;
                 opacity: 0;
             }
             &[data-scroll='in']{
-                transform: translateX(0%);
-                width: auto;
+                //transform: translateX(0%);
+                transform: scaleX(1) ;
+                //width: auto;
                 opacity: 1;
             } 
             flex: 0 0 70%;
@@ -45,21 +54,24 @@
             transition-delay: 0.5s;
             & img{
                 width: 100%;
+                text-align: center;
             }
             & figcaption{
                 position: absolute;
-                bottom: 0;
+                top: 0;
                 left: 0;
+                display: inline-block;
                 width: 100%;
-                text-align: center;
                 padding: 1rem;
                 font-size: 3rem;
-                color: aliceblue;
-                background-image: linear-gradient(to bottom, white,black);
+                color: cyan;
+                //background-image: linear-gradient(to bottom, white,transparent 15%);
                 border-radius: 4px;
-            }
+                animation: in-out 30s ease-in-out infinite;
+                backface-visibility: hidden;
+            } 
         }
-        &__description{
+        &__description{ 
             flex: 1;
             align-self: center;
             color: whitesmoke;
@@ -72,11 +84,11 @@
             background-image: linear-gradient(to right,white 20%,cyan 100%);
             color: transparent;
             &[data-scroll='out'] {
-                transform: scale(2) translateX(100%);
+                transform: scaleX(3) ;
                 opacity: 0;
             }
             &[data-scroll='in']{
-                transform: scale(1) translateX(0%);
+                transform: scaleX(1) ;
                 opacity: 1;
             } 
             &__cta{

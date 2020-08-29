@@ -87,7 +87,10 @@
         grid-row: 2/span 8;
         grid-column: 2/span 8;
 
-        background-image: linear-gradient(to right,skyblue,hotpink);
+        background-image: linear-gradient(rgba(black,0.6),rgba(black,0.6)), url('./../Images/skills.png');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
 
         display: grid;
         grid-template-rows: min-content 1fr;
@@ -118,7 +121,7 @@
     &__content{
         position: relative;
         overflow: hidden;
-        background-image: linear-gradient(to right,blue,red);
+        background-image: linear-gradient(to right,black,red);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;

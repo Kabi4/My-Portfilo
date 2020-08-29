@@ -118,3 +118,22 @@
         transform: inherit;
     }
 }
+
+@keyframes in-out{
+    0%{
+        transform: scaleX(1); 
+        color: cyan;
+        text-shadow: aquamarine;
+    }
+    60%{
+        transform: scaleX(2); 
+        color: aquamarine;
+        text-shadow: rosybrown;
+    }
+    100%{
+        transform: scaleX(1); 
+        color: cyan;
+        text-shadow: aquamarine;
+    }
+
+}
