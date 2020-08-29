@@ -12,7 +12,7 @@
   100% {
     transform: translateX(-120px) translateY(20px) rotateZ(0deg); } }
 
-@keyframes straight {
+@keyframes straight { 
   0% {
     transform: translateX(0) translateY(0); }
   70% {
