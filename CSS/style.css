@@ -108,7 +108,7 @@ html {
 
 body {
   line-height: 1.6;
-  background-color: #f7ecec; }
+  background-color: black; }
 
 .gif {
   position: absolute;
@@ -184,7 +184,7 @@ body {
   grid-column: 1/-1;
   padding: 2rem;
   background-color: #f0ebeb;
-  background-image: linear-gradient(rgba(247, 236, 236, 0.6), rgba(247, 236, 236, 0.6)), url(./../Images/nav.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./../Images/nav.jpg);
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -381,7 +381,7 @@ body {
   display: grid;
   grid-template-rows: 13vh 83vh 60rem 60rem min-content 100vh;
   grid-template-columns: minmax(3rem, 1fr) repeat(8, 14rem) minmax(3rem, 1fr);
-  background-image: linear-gradient(rgba(247, 236, 236, 0.6), rgba(247, 236, 236, 0.6)), url(./../Images/nav.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   grid-row-gap: 6rem; }
 
 .description {
@@ -886,7 +886,8 @@ body {
         opacity: 1; }
       .frontEndProjects__card__figure img {
         width: 100%;
-        text-align: center; }
+        text-align: center;
+        border-radius: 40px; }
       .frontEndProjects__card__figure figcaption {
         position: absolute;
         top: 0;
@@ -941,9 +942,10 @@ body {
     width: 45rem;
     height: 45rem; }
   .contact p {
+    margin-top: -3rem;
     color: white;
     font-size: 2.1rem;
-    padding: 1rem 30rem; }
+    padding: 1rem 30vw; }
   .contact button a {
     padding: 1rem;
     font-size: 3rem;
