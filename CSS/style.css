@@ -193,6 +193,7 @@ body {
   .nav__items {
     z-index: 3;
     font-size: 2rem;
+    display: block;
     text-align: center;
     background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
     border-radius: 50px;
@@ -205,11 +206,11 @@ body {
     .nav__items a:visited {
       text-decoration: none;
       color: black; }
-    .nav__items:hover {
-      transform: translateY(-1.5px); }
-    .nav__items:active {
+    .nav__items a:hover {
+      transform: translateY(-3px); }
+    .nav__items a:active {
       background: linear-gradient(135deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
-      transform: translateY(1.5px); }
+      transform: translateY(3px); }
 
 .header {
   grid-row: 1/3;
@@ -379,7 +380,7 @@ body {
 .container {
   position: relative;
   display: grid;
-  grid-template-rows: 13vh 83vh 60rem 60rem min-content 100vh;
+  grid-template-rows: 13vh 83vh 60rem 60rem min-content 100vh 100vh;
   grid-template-columns: minmax(3rem, 1fr) repeat(8, 14rem) minmax(3rem, 1fr);
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   grid-row-gap: 6rem; }
@@ -684,7 +685,7 @@ body {
   .popup__content {
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to right, darkblue, red);
+    background-image: linear-gradient(to right, black, red);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent; }
@@ -918,17 +919,19 @@ body {
       .frontEndProjects__card__description[data-scroll='in'] {
         transform: scaleX(1);
         opacity: 1; }
-      .frontEndProjects__card__description__cta button a {
-        padding: 1rem;
-        font-size: 3rem;
-        text-decoration: none;
-        font-family: 'Pacifico', cursive;
-        color: white; }
-      .frontEndProjects__card__description__cta button:hover {
-        transform: translateY(-3px) !important; }
-      .frontEndProjects__card__description__cta button:active {
-        transform: translateY(3px) !important;
-        box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5) inset, -3px -3px 6px 0 rgba(255, 255, 255, 0.6) inset; }
+      .frontEndProjects__card__description__cta button {
+        margin-right: 1rem; }
+        .frontEndProjects__card__description__cta button a {
+          padding: 1rem;
+          font-size: 3rem;
+          text-decoration: none;
+          font-family: 'Pacifico', cursive;
+          color: white; }
+        .frontEndProjects__card__description__cta button:hover {
+          transform: translateY(-3px) !important; }
+        .frontEndProjects__card__description__cta button:active {
+          transform: translateY(3px) !important;
+          box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5) inset, -3px -3px 6px 0 rgba(255, 255, 255, 0.6) inset; }
 
 .contact {
   text-align: center;
@@ -957,3 +960,40 @@ body {
   .contact button:active {
     transform: translateY(3px) !important;
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5) inset, -3px -3px 6px 0 rgba(255, 255, 255, 0.6) inset; }
+
+.footer {
+  grid-row: 7/8;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: min-content;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../Images/Social.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden; }
+  .footer img {
+    width: 40rem;
+    height: 40rem; }
+  .footer p {
+    text-align: center;
+    justify-self: stretch;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-top: 4rem;
+    margin: 0 -50vw; }
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; }
+  .list__items {
+    font-size: 3rem;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+    .list__items a {
+      all: inherit; }

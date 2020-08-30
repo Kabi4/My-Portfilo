@@ -57,6 +57,30 @@ state.dataArray = [{
     title: "Tic Tac Toe",
     image: "Images/TicTacToe.png",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Ballon Bumper",
+    image: 'Images/BalloonBumper.png',
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Car Simulator",
+    image: "Images/Car Simulator.png",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Hungry Dog Chase",
+    image: "Images/HungryDogChase.png",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Stone Paper Scissor",
+    image: "Images/StonePaperScissor.png",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Whack A Food",
+    image: "Images/WhackAFood.png",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+},{
+    title: "Soccer",
+    image: "Images/Soccer.png",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
 }];
 state.starts = 6;
 state.ends=5;

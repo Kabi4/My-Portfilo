@@ -1,0 +1,157 @@
+.sharebutton{
+    top: 5rem;
+    left: 5rem;
+    z-index: 1000;
+    position: fixed;
+    
+}
+.share{
+    text-align:center;
+    position: relative;
+    top:0;
+    left: 0;
+    z-index: 100;
+    transform: scale(1.2);
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(red,white);
+    border: none;
+    box-shadow: 0rem 0rem 3rem red;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+    
+    
+}
+.close{
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 90;
+    transform: scale(1.2);
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(to right,red,white);
+    border: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    
+}
+.facebook{
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.2s;
+    transition-delay: 0s;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(to right,darkblue,white);
+    border: none;
+    box-shadow:none;
+    
+   
+}
+.insta{
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.2s;
+    transition-delay: 0.2s;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(to right,hotpink,white);
+    border: none;
+    box-shadow:none;
+    
+    
+}
+.google{
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.2s;
+    transition-delay: 0.4s;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(to right,rgb(231, 143, 143),white);
+    border: none;
+    box-shadow:none;
+    
+    
+}
+.twitter{
+    text-align:center;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 0.2s;
+    transition-delay: 0.6s;
+    font-size: 23px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-image:linear-gradient(to right,skyblue,white);
+    border: none;
+    box-shadow:none;
+    
+    
+}
+
+.share:focus{
+    opacity: 0;
+    z-index: 89;
+    outline: none;
+}
+
+.share:focus ~ .close{
+    opacity: 1;
+    visibility: visible;
+    outline: none;
+}
+
+.share:focus ~ .facebook{
+    transform: translateX(40px);
+    box-shadow: 0rem 0rem 3rem darkblue;
+}
+.share:focus ~ .insta{
+    transform: translateY(40px);
+    box-shadow: 0rem 0rem 3rem hotpink;
+}
+.share:focus ~ .google{
+    transform: translateX(-40px);
+    box-shadow: 0rem 0rem 3rem rgb(231, 143, 143);
+}
+.share:focus ~ .twitter{
+    transform: translateY(-40px);
+    box-shadow: 0rem 0rem 3rem skyblue;
+}
+.share:focus ~ .facebook{
+    transform: translateX(40px);
+}
+.facebook:focus{
+    outline: none;   
+}
+.insta:focus{
+    outline: none;   
+}
+.twitter:focus{
+    outline: none;   
+}
+.google:focus{
+    outline: none;   
+}

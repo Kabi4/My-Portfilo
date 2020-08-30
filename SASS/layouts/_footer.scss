@@ -1,0 +1,41 @@
+.footer{
+    grid-row: 7/8;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: min-content;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(rgba(black,0.6),rgba(black,0.6)), url('./../Images/Social.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    & img {
+        width: 40rem;
+        height: 40rem;
+    }
+    & p{
+        text-align: center;
+        justify-self: stretch;
+        font-size: 1.5rem;
+        font-weight: 200;
+        padding-top: 4rem;
+        margin: 0 -50vw;
+    }
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    &__items{
+        font-size: 3rem;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        & a{
+            all: inherit;
+        }
+    }
+}
