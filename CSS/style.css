@@ -834,39 +834,39 @@ body {
     .unityProjects__card--2 {
       transform-style: preserve-3d;
       box-shadow: 0rem 0rem 8rem white;
-      bottom: 0;
+      bottom: 50%;
       left: 50%;
-      transform: translateX(-50%) translateY(-10%) rotateY(0deg);
+      transform: translateX(-50%) translateY(40%) rotateY(0deg);
       background-color: rgba(128, 128, 128, 0.5); }
     .unityProjects__card--0 {
       transform-style: preserve-3d;
       box-shadow: 8rem 1rem 30rem white;
-      bottom: 0;
+      bottom: 50%;
       left: 0;
-      transform: translateX(-27%) perspective(100rem) rotateY(-60deg) scale(0.6);
+      transform: translateX(-27%) translateY(50%) perspective(100rem) rotateY(-60deg) scale(0.6);
       background-color: rgba(245, 245, 245, 0.9); }
     .unityProjects__card--1 {
       transform-style: preserve-3d;
       box-shadow: 8rem 1rem 30rem white;
       perspective: 150rem;
       -moz-perspective: 150rem;
-      transform: translateX(-64%) translateY(-5%) perspective(100rem) rotateY(-40deg) scale(0.8);
+      transform: translateX(-64%) translateY(45%) perspective(100rem) rotateY(-40deg) scale(0.8);
       background-color: rgba(245, 245, 245, 0.9);
-      bottom: 0;
+      bottom: 50%;
       left: 25%; }
     .unityProjects__card--3 {
-      bottom: 0;
+      bottom: 50%;
       left: 75%;
       transform-style: preserve-3d;
       box-shadow: -8rem -1rem 30rem white;
-      transform: translateX(-46%) translateY(-5%) perspective(100rem) rotateY(40deg) scale(0.8);
+      transform: translateX(-46%) translateY(45%) perspective(100rem) rotateY(40deg) scale(0.8);
       background-color: rgba(245, 245, 245, 0.9); }
     .unityProjects__card--4 {
-      bottom: 0;
+      bottom: 50%;
       left: 100%;
       transform-style: preserve-3d;
       box-shadow: -8rem -1rem 30rem white;
-      transform: translateX(-84%) perspective(100rem) rotateY(60deg) scale(0.6);
+      transform: translateX(-84%) translateY(50%) perspective(100rem) rotateY(60deg) scale(0.6);
       background-color: rgba(245, 245, 245, 0.9); }
     .unityProjects__card---1 {
       bottom: 0;
