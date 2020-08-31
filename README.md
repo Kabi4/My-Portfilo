@@ -1,4 +1,4 @@
 # My-Portfilo-
 My Portfilo
-On work  
+Full responsive Protfolio
 [See Live](https://kabi4.github.io/My-Portfilo/)
