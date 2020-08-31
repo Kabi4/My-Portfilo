@@ -8,7 +8,10 @@
     background-image: linear-gradient(rgba(black,0.6),rgba(black,0.6)), url('./../Images/desciption.jpg');
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; 
+    @media only screen and (max-width: $layer--10){
+        display: none;
+    }
     // &::before{
     //     content: '';
     //     position: absolute;

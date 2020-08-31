@@ -10,6 +10,9 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Berkshire Swash', cursive;
+    @media only screen and (max-width: $layer--10){
+        font-size: 50%;
+    } 
 }
 
 body{

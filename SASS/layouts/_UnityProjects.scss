@@ -15,6 +15,10 @@
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+    height: 100vh;
+    @media only screen and (max-width: $layer--9){
+        height: 150vh;
+}
     &__left{
         display:inline-block;
         color:white;
@@ -46,7 +50,7 @@
         top:50%;
         z-index: 100;
         font-size: 4rem;
-        right:0%;
+        right:0;
         box-shadow:0rem 0rem 4rem white;
         background-color:rgba(gray,0.5);
         outline:none;
@@ -62,6 +66,7 @@
     }
     
     &__card{
+        position: absolute;
         grid-column: 1/2;
         grid-row:2/3;
         display: inline-block;
@@ -79,7 +84,9 @@
             // width: 25%;
             transform-style: preserve-3d;
             box-shadow: 0rem 0rem 8rem white;
-            transform: perspective(200rem) translateX(35vw) translateY(-2rem);
+            bottom: 0;
+            left: 50%;
+            transform:  translateX(-50%) translateY(-10%) rotateY(0deg);
             background-color: rgba(gray,0.5);
         }
         &--0{
@@ -88,10 +95,9 @@
             // width: 25%;
             transform-style: preserve-3d;
             box-shadow: 8rem 1rem 30rem white;
-            perspective: 150rem;
-            -moz-perspective: 150rem;
-            transform: perspective(300rem) rotateY(-60deg) translateX(-34vw)  scaleX(0.6) scaleY(0.6);
-            transform-origin: right;
+            bottom: 0;
+            left: 0;
+            transform:  translateX(-27%) perspective(100rem) rotateY(-60deg) scale(0.6);
             background-color: rgba(whitesmoke,0.9);
         }
         &--1{
@@ -102,47 +108,51 @@
             box-shadow: 8rem 1rem 30rem white;
             perspective: 150rem;
             -moz-perspective: 150rem;
-            transform: perspective(200rem) rotateY(-40deg) translateX(5vw)  scaleX(0.8) scaleY(0.8);
-            transform-origin: right;
+            transform:  translateX(-64%) translateY(-5%) perspective(100rem) rotateY(-40deg) scale(0.8);
             background-color: rgba(whitesmoke,0.9);
+            bottom: 0;
+            left: 25%;
+
         }
         &--3{
             //grid-column:1/2;
            //grid-row:2/3;
             // width: 33.33%;
+            bottom: 0;
+            left: 75%;
             transform-style: preserve-3d;
             box-shadow: -8rem -1rem 30rem white;
-            perspective: 150rem;
-            -moz-perspective: 150rem;
-            transform: perspective(200rem) rotateY(40deg) translateX(90vw)  scaleX(0.8) scaleY(0.8);
-            transform-origin: right;
+            transform:  translateX(-46%) translateY(-5%) perspective(100rem) rotateY(40deg) scale(0.8);
             background-color: rgba(whitesmoke,0.9);
+
         }
         &--4{
             // position: absolute;
             //grid-row:2/3;
             // width: 25%;
+            bottom: 0;
+            left: 100%;
             transform-style: preserve-3d;
             box-shadow: -8rem -1rem 30rem white;
-            perspective: 150rem;
-            -moz-perspective: 150rem;
-            transform: perspective(400rem) rotateY(60deg) translateX(200vw)  scaleX(0.6) scaleY(0.6);
-            transform-origin: right;
+            transform:  translateX(-84%) perspective(100rem) rotateY(60deg) scale(0.6);
             background-color: rgba(whitesmoke,0.9);
         }
         &---1{
             //  position: absolute;
             // width: 25%;
-            transform: translateX(-100vw) scaleX(0.2) scaleY(0.2);
+            bottom: 0;
+            left: 0;
+            transform: translateX(-100%) scaleX(0.2) scaleY(0.2);
              transform-style: preserve-3d;
-             transform-origin: left;
+
         }
         &--5{
             // position: absolute;
             // width: 25%;
-            transform: translateX(100vw) scaleX(0.2) scaleY(0.2);
+            bottom: 0;
+            left: 100%;
+            transform: translateX(100%) scaleX(0.2) scaleY(0.2);
             transform-style: preserve-3d;
-            transform-origin: right;
         }
         &---2{
             display: none;
@@ -164,6 +174,7 @@
     }
     &__heading{
         box-shadow: 0rem 0rem 4rem black;
+        
     }
     border-bottom: 3px solid grey;
 }
