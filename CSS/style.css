@@ -780,7 +780,7 @@ body {
   border-bottom: 3px solid grey; }
   @media only screen and (max-width: 40.625em) {
     .unityProjects {
-      height: 150vh; } }
+      height: 100vh; } }
   .unityProjects__left {
     display: inline-block;
     color: white;
