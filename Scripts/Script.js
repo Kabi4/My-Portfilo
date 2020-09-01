@@ -5,7 +5,7 @@ const elements = {
 };
 
 const buildFirstElement = (item) =>{
-    markup = `
+    markup = ` 
     <div class="unityProjects__card unityProjects__card---1">
         <img class="unityProjects__image" src="${item.image}" alt="${item.title} Screen Shot">
         <h2 class="unityProjects__heading heading__secondary"> ${item.title} </h2>
