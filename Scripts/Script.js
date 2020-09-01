@@ -32,58 +32,58 @@ state = {};
 state.dataArray = [{
     title: "Tetris",
     image: "Images/Tetris.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Created my first game with unity. Tetris its nothing new but like a old versions the blocks falling down.You will arange them as you score score will update a good music and the lines which are fulled will be vanished."
 },{
     title: "Clicky Crates",
     image: "Images/ClickyCrates.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Clicky Crates is game with crates bouncing off the ground with some bad thing stoo i.e skulls and bombs watch out not to click them and score as more as possible. Also you can select the difficulty level as per you want."
 },{
     title: "Rogue Like 2D",
     image: "Images/Rogue.jpg",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Rogue Like 2D game made with the help of Unity Tutorials.This game you many of intermidiate features level loading, Intelligent Enemies and you have to survive with tha given food for as many days as you can Rogue like 2D."
 },{
     title: "Flappy Bird",
     image: "Images/Flappy.jpg",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Flappy Bird is created by me own thanks too the Unity for the assests i was able to made this game Falppy bird is just like any normal Falppy bird game as you Falps around the pillars Avoid them to increase your score."
 },{
     title: "Dumb Runner",
     image: "Images/Dumb Runner.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Dumb runner tooks a lot and was only made by me and me though i used the unitya assests again. You have Both the mode i.e 3D and 2D you can toggle between them and it's all about jump crouch and avoid obstacles."
 },{
     title: "Rollin",
     image: "Images/Rollin.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Rollin was created with the idea of unity a ball roll with a spawning powerups and the enemies around watch them out they will try to push you downwards avoid them use powerups as bonus for upper hand against them."
 },{
     title: "Tic Tac Toe",
     image: "Images/TicTacToe.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "My second project in unity Tic Tac Toe thanks unity to guide me throungh out the project and understand the major Basic Concepts of the Unity i.e rendering re-redering setStates and other and toggle betweens buttons."
 },{
     title: "Ballon Bumper",
     image: 'Images/BalloonBumper.png',
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Ballon Bumper Simple game nothing much and ballong float like just flappy bird and gathering coins to increase the score though i haven't updated any U.I there but this still a cool game to play and enjoy."
 },{
     title: "Car Simulator",
     image: "Images/Car Simulator.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Simple Simulator made by me nothing much and drive car through out the roads and card ajustment with the help of cinemachine and love to dice futher into it But as per i mentioned unity is my hobby not career."
 },{
     title: "Hungry Dog Chase",
     image: "Images/HungryDogChase.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Hungry Dog Chase is a good version of switching your 2D 3D view that is togglinh between them and avoid dogs to pass thru your yard the dogs are pretty diffrent and varies in their speed watch out them."
 },{
     title: "Stone Paper Scissor",
     image: "Images/StonePaperScissor.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "A Simple Stone Paper Scissor game made with the help of unity and some awkward animations because i cannot get the perfect that time i love this game to play i want to make it online between two player."
 },{
     title: "Whack A Food",
     image: "Images/WhackAFood.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Whach A food was contructed under the unity as project part and here some food items apears which vanisesh tap them before they vanish to earn more time and score a lot lot more than your last score."
 },{
     title: "Soccer",
     image: "Images/Soccer.png",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
+    description: "Soccer is simple goal defending game just like rolling the powerups spawns and only you can use it against you enemies as a upper hand they continously going towards your goal stop them before they reach there."
 }];
-state.starts = state.dataArray.length-1;
-state.ends=state.dataArray.length-2;
+state.starts = 6;
+state.ends=5;
 
 const deleteExtras = () => {
     const extraLeft = document.querySelector('.unityProjects__card---2');
