@@ -983,7 +983,11 @@ body {
         transform: scaleX(1);
         opacity: 1; }
       .frontEndProjects__card__description__cta button {
-        margin-right: 1rem; }
+        margin-right: 1rem;
+        @media only screen and (max-width: 62.5em) {
+          .frontEndProjects__card__description[data-scroll='out'] {
+             margin-right: 0rem;} }
+}
         .frontEndProjects__card__description__cta button a {
           padding: 1rem;
           font-size: 3rem;
