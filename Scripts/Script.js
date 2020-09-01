@@ -82,8 +82,8 @@ state.dataArray = [{
     image: "Images/Soccer.png",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, architecto iure. Quod at sint doloremque magnam explicabo ratione illo perspiciatis tempore vel dolor, nam ullam, veniam molestias impedit repellendus nisi."
 }];
-state.starts = 6;
-state.ends=5;
+state.starts = state.dataArray.length-1;
+state.ends=state.dataArray.length-2;
 
 const deleteExtras = () => {
     const extraLeft = document.querySelector('.unityProjects__card---2');
